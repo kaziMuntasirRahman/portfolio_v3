@@ -38,6 +38,7 @@
 .primary-btn {
   height: 64px;
   border-radius: 5px;
+  display: flex;
   align-items: center;
   border: 1px solid var(--deep-bg);
   background: var(--deep-bg);
@@ -53,6 +54,10 @@
   background-color: #ff0c0c;
   transition: background-color .2s ease-in-out;
   cursor: pointer;
+}
+
+.primary-btn:focus{
+  border: 2px solid #000000;
 }
 
 /* header section style start */
@@ -128,22 +133,36 @@ nav .links>p {
   margin-bottom: 30px;
 }
 
-.buttons .download {
+.button-container{
+  display: flex;
+
+}
+
+.button-container .download {
   padding: 19px 17px 18px 17px;
   margin-right: 30px;
 }
 
-.buttons .contact {
+.button-container .contact {
   color: #FD6E0A;
-  background-color: rgba(253, 111, 10, 0);
+  background-color: rgba(255, 255, 255, 0);
   padding: 19px 23px 18px 24px;
+}
+
+.button-container .contact:hover{
+  color: #ff0c0c;
+  border: 1px solid #ff0c0c;
 }
 
 .profile-info {
   border: var(--test-border);
   background-color: var(--test-bg);
-  width: 585px;
+  min-width: 585px;
   margin: 0 0 50px 230px;
+}
+
+.profile-info>p{
+  max-width: 580px;
 }
 
 .profile img {
@@ -338,6 +357,10 @@ footer .address p {
   line-height: 28px;  /* 175% */
   margin-bottom: 24px;
   border: 0;
+}
+
+.message form input:focus, .message form textarea:focus{
+  border: 2px solid #ff0c0c;
 }
 
 .message form input{
