@@ -14,6 +14,7 @@
   font-weight: 700;
 }
 
+
 .primary-para {
   color: var(--light-font);
   text-align: center;
@@ -28,6 +29,7 @@
   --light-bg: #FFF8F3;
   --deep-bg: #FD6E0A;
   --dark-font: #181818;
+  --semi-dark-font: #757575;
   --light-font: #474747;
   /* --test-border: 2px solid black; */
   /* --test-bg: cyan; */
@@ -184,7 +186,7 @@ main {
 
 /* /about section done */
 /* what-I-do section start */
-.what-i-do{
+.what-i-do {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,22 +200,75 @@ main {
   border-radius: 5px;
 }
 
-.what-i-do .cart-container .cart{
+.what-i-do .cart-container .cart {
   background: #FFF;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   padding: 32px 33px 30px 33px;
 }
 
-.what-i-do > p{
+.what-i-do>p {
   max-width: 47.4vw;
   min-width: 35vw;
   margin: 30px auto 50px auto;
 }
 
-.what-i-do .cart-container .cart>p{
+.what-i-do .cart-container .cart>p {
   text-align: left;
 }
 
-.what-i-do .cart-container .cart>h3{
+.what-i-do .cart-container .cart>h3 {
   margin: 28px 0 20px 0;
+}
+
+/* .what-i-do section ends */
+/* A summary of my Resume section start */
+.summary-of-resume{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu-and-ex {
+  display: flex;
+  margin-top: 10.46vh;
+  gap: 24px;
+}
+
+.edu-and-ex h5, .edu-and-ex h6, .edu-and-ex p{
+  text-align: left;
+}
+
+.edu-and-ex h4, .edu-and-ex h5 {
+  color: var(--light-font);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.edu-and-ex h5{
+  font-size: 25px;
+}
+
+.edu-and-ex h6 {
+  color: var(--semi-dark-font);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.edu-and-ex hr{
+  height: 1px; /* Adjust this value to make the line thinner */
+  border: none;
+  background-color: #d1d1d1;; /* Set the background color of the line */
+  margin: 30px 0 30px 0;
+}
+
+.education>h4, .experience>h4{
+  margin-bottom: 30px;
+}
+
+.edu-and-ex h6{
+  margin: 10px 0 20px 0;
+}
+
+.summary-of-resume .primary-btn{
+  margin: 4.62vh auto 10.46vh auto;
 }
