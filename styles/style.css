@@ -29,8 +29,8 @@
   --deep-bg: #FD6E0A;
   --dark-font: #181818;
   --light-font: #474747;
-  --test-border: 2px solid black;
-  --test-bg: cyan;
+  /* --test-border: 2px solid black; */
+  /* --test-bg: cyan; */
 }
 
 .primary-btn {
@@ -148,11 +148,13 @@ main {
   width: 59.375vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 130px auto;
+  gap: 130px;
+  margin: auto;
   background-color: var(--test-bg);
 }
+
 
 /* about me section on */
 .about-me {
@@ -163,21 +165,55 @@ main {
   background: var(--light-bg);
 }
 
-.about-me>p{
+.about-me>.primary-para {
   margin: 30px 0;
 }
 
-.bio-infos{
+.bio-infos {
   justify-content: space-around;
   display: flex;
 }
 
-.bio-infos .primary-para{
+.bio-infos .primary-para {
   font-size: 20px;
 }
 
-.bio-infos h6{
+.bio-infos h6 {
   font-weight: 700;
 }
+
 /* /about section done */
 /* what-I-do section start */
+.what-i-do{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-i-do .cart-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 5px;
+}
+
+.what-i-do .cart-container .cart{
+  background: #FFF;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  padding: 32px 33px 30px 33px;
+}
+
+.what-i-do > p{
+  max-width: 47.4vw;
+  min-width: 35vw;
+  margin: 30px auto 50px auto;
+}
+
+.what-i-do .cart-container .cart>p{
+  text-align: left;
+}
+
+.what-i-do .cart-container .cart>h3{
+  margin: 28px 0 20px 0;
+}
