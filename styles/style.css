@@ -7,6 +7,17 @@
   font-family: var(--default-font);
 }
 
+:root {
+  --default-font: 'Open Sans', sans-serif;
+  --light-bg: #FFF8F3;
+  --deep-bg: #FD6E0A;
+  --dark-font: #181818;
+  --semi-dark-font: #757575;
+  --light-font: #474747;
+  /* --test-border: 2px solid black; */
+  /* --test-bg: cyan; */
+}
+
 .section-heading {
   color: var(--dark-font);
   text-align: center;
@@ -24,26 +35,24 @@
   /* 166.667% */
 }
 
-:root {
-  --default-font: 'Open Sans', sans-serif;
-  --light-bg: #FFF8F3;
-  --deep-bg: #FD6E0A;
-  --dark-font: #181818;
-  --semi-dark-font: #757575;
-  --light-font: #474747;
-  /* --test-border: 2px solid black; */
-  /* --test-bg: cyan; */
-}
-
 .primary-btn {
   height: 64px;
   border-radius: 5px;
+  align-items: center;
   border: 1px solid var(--deep-bg);
   background: var(--deep-bg);
   color: #FFF;
   font-size: 20px;
   font-weight: 700;
   padding: 18px 35px 19px 36px;
+  transition: background-color .1s ease-in-out;
+  
+}
+
+.primary-btn:hover{
+  background-color: #ff0c0c;
+  transition: background-color .2s ease-in-out;
+  cursor: pointer;
 }
 
 /* header section style start */
@@ -81,6 +90,7 @@ nav .links {
   display: flex;
   align-items: center;
   gap: 51px;
+  cursor: pointer;
 }
 
 nav .links>p {
@@ -313,10 +323,11 @@ footer .address p {
 .message form {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-.message form>input,
-.message form>textarea {
+.message form input,
+.message form textarea {
   min-width: 461px;
   min-height: 64px;
   border-radius: 5px;
@@ -327,6 +338,14 @@ footer .address p {
   line-height: 28px;  /* 175% */
   margin-bottom: 24px;
   border: 0;
+}
+
+.message form input{
+  padding: 0 0 0 30px;
+}
+
+.message form textarea{
+  padding: 18px 0 0 30px;
 }
 
 .message .section-heading{
