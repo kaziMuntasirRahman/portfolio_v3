@@ -222,7 +222,7 @@ main {
 
 /* .what-i-do section ends */
 /* A summary of my Resume section start */
-.summary-of-resume{
+.summary-of-resume {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,17 +234,20 @@ main {
   gap: 24px;
 }
 
-.edu-and-ex h5, .edu-and-ex h6, .edu-and-ex p{
+.edu-and-ex h5,
+.edu-and-ex h6,
+.edu-and-ex p {
   text-align: left;
 }
 
-.edu-and-ex h4, .edu-and-ex h5 {
+.edu-and-ex h4,
+.edu-and-ex h5 {
   color: var(--light-font);
   font-size: 30px;
   font-weight: 700;
 }
 
-.edu-and-ex h5{
+.edu-and-ex h5 {
   font-size: 25px;
 }
 
@@ -254,21 +257,78 @@ main {
   font-weight: 600;
 }
 
-.edu-and-ex hr{
-  height: 1px; /* Adjust this value to make the line thinner */
+.edu-and-ex hr {
+  height: 1px;
+  /* Adjust this value to make the line thinner */
   border: none;
-  background-color: #d1d1d1;; /* Set the background color of the line */
+  background-color: #d1d1d1;
+  ;
+  /* Set the background color of the line */
   margin: 30px 0 30px 0;
 }
 
-.education>h4, .experience>h4{
+.education>h4,
+.experience>h4 {
   margin-bottom: 30px;
 }
 
-.edu-and-ex h6{
+.edu-and-ex h6 {
   margin: 10px 0 20px 0;
 }
 
-.summary-of-resume .primary-btn{
+.summary-of-resume .primary-btn {
   margin: 4.62vh auto 10.46vh auto;
+}
+
+/* summary of resume section ends as well as the main section */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 780px;
+  width: 100%;
+  gap: 117px;
+  background-color: var(--light-bg);
+  border: var(--test-border);
+  padding: 12.03vh;
+}
+
+footer .address p {
+  max-width: 30vw;
+  min-width: 25vw;
+  color: var(--light-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* 175% */
+  margin: 20px 0 30px 0;
+}
+
+.address>h2,
+.message>h2 {
+  text-align: left;
+}
+
+.message form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message form>input,
+.message form>textarea {
+  min-width: 461px;
+  min-height: 64px;
+  border-radius: 5px;
+  background: var(--White-Color, #FFF);
+  color: var(--Dark-03, #757575);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;  /* 175% */
+  margin-bottom: 24px;
+  border: 0;
+}
+
+.message .section-heading{
+  margin-bottom: 28px;
 }
