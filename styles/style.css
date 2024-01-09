@@ -1,4 +1,69 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
   border: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: var(--default-font);
+}
+
+:root {
+  --default-font: 'Open Sans', sans-serif;
+  --light-bg: #FFF8F3;
+  --deep-bg: #FD6E0A;
+  --dark-font: #181818;
+  --light-font: #474747;
+  /* --test-border: 2px solid black;
+  --test-bg: cyan; */
+}
+
+.primary-btn {
+  height: 64px;
+  border-radius: 5px;
+  background: var(--deep-bg);
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18px 35px 19px 36px;
+}
+
+/* header section style start */
+header {
+  height: 837px;
+  width: 100%;
+  background-color: var(--light-bg);
+  border: 2px solid black;
+  background-image: url('/images/developer.png'), url('/images/header_bg.png');
+  background-repeat: no-repeat;
+  background-position: 20px, right bottom;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: var(--test-border);
+  background: var(--test-bg);
+  margin: 50px 230px auto 226px;
+}
+
+nav .nickname {
+  color: var(--Dark-01, #181818);
+  font-size: 45px;
+  font-weight: 800;
+}
+
+nav .nickname span {
+  color: var(--deep-bg);
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+nav .links>p {
+  color: var(--light-font);
+  font-size: 20px;
+  font-weight: 400;
 }
