@@ -14,14 +14,23 @@
   font-weight: 700;
 }
 
+.primary-para {
+  color: var(--light-font);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
+}
+
 :root {
   --default-font: 'Open Sans', sans-serif;
   --light-bg: #FFF8F3;
   --deep-bg: #FD6E0A;
   --dark-font: #181818;
   --light-font: #474747;
-  /* --test-border: 2px solid black;
-  --test-bg: cyan; */
+  --test-border: 2px solid black;
+  --test-bg: cyan;
 }
 
 .primary-btn {
@@ -135,9 +144,40 @@ nav .links>p {
 /* /header section done */
 
 /* main section on */
+main {
+  width: 59.375vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 130px auto;
+  background-color: var(--test-bg);
+}
 
 /* about me section on */
 .about-me {
+  width: 100%;
   border-radius: 10px;
+  text-align: center;
+  padding: 12vh 8.15vw 12vh 8.15vw;
   background: var(--light-bg);
 }
+
+.about-me>p{
+  margin: 30px 0;
+}
+
+.bio-infos{
+  justify-content: space-around;
+  display: flex;
+}
+
+.bio-infos .primary-para{
+  font-size: 20px;
+}
+
+.bio-infos h6{
+  font-weight: 700;
+}
+/* /about section done */
+/* what-I-do section start */
