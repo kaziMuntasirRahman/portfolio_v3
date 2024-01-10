@@ -67,7 +67,6 @@ header {
   height: 837px;
   width: 100%;
   background-color: var(--light-bg);
-  border: var(--test-border);
   background-image: url('/images/developer.png'), url('/images/header_bg.png');
   background-repeat: no-repeat;
   background-position: 23px, right bottom;
@@ -176,25 +175,32 @@ nav .links>p {
 
 /* main section on */
 main {
-  width: 59.375vw;
+  width: 1140px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   gap: 130px;
   margin: auto;
   background-color: var(--test-bg);
 }
 
+main .about-me, main .what-i-do, main .summary-of-resume{
+  border: 3px dotted rgba(255, 0, 234, 0);
+}
 
 /* about me section on */
 .about-me {
+  margin-top: 130px;
   width: 100%;
   border-radius: 10px;
   text-align: center;
-  padding: 12vh 8.15vw 12vh 8.15vw;
+  padding: 130px 8.15vw 130px 8.15vw;
   background: var(--light-bg);
 }
+
+
 
 .about-me>.primary-para {
   margin: 30px 0;
